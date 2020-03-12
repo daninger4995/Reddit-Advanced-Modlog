@@ -27,7 +27,7 @@ def main():
     while True: 
         print('Initiating....')
         try:
-            for log in reddit.subreddit('fffffffuuuuuuuuuuuu').mod.log(limit=10000):
+            for log in reddit.crawlreddit.mod.log(limit=10000):
                 userExists = True
 
                 if log.action == 'removelink':
