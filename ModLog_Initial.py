@@ -27,7 +27,6 @@ def main():
     while True: 
         print('Initiating....')
         try:
-            start_time = 0
             for log in reddit.subreddit('fffffffuuuuuuuuuuuu').mod.log(limit=10000):
                 userExists = True
 
