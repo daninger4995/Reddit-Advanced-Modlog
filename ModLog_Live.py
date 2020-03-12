@@ -48,7 +48,6 @@ def main():
                         if userExists:
                             try: #If the user is already registered, increment their row. If not, create a new row
                                 cell = sheet.find(Submission.author.name)
-                                print('Cell Value: ' + cell.value)
                                 colNumber = cell.col
                                 rowNumber = cell.row
                                 value = sheet.cell(rowNumber, (colNumber + 1)).value
@@ -82,7 +81,6 @@ def main():
                         if userExists:
                             try: #If the user is already registered, increment their row. If not, create a new row
                                 cell = sheet.find(Comment.author.name)
-                                print('Cell Value: ' + cell.value)
                                 colNumber = cell.col
                                 rowNumber = cell.row
                                 value = sheet.cell(rowNumber, (colNumber + 2)).value
